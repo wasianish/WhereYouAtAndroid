@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wasianish.whereyouat.WhereYouAtActivity">
+
+    <TextView
+        android:id="@+id/button_wya"
+        android:onClick="wyaClick"
+        android:text="Where ya at?"
+        android:textSize="48sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#F44336"
+        android:elevation="16dp"
+        android:layout_height="360dp" />
+
+    <Spinner
+        android:id="@+id/spinner_group"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/button_wya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="#EF9A9A"/>
+
+    <View
+        android:layout_below="@id/spinner_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFEBEE"/>
+
+</RelativeLayout>
